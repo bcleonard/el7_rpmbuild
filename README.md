@@ -44,5 +44,7 @@ Logs will be found in:
 ```sh
 /data/rpmbuild/LOGS
 ```
-You should be able to determine what went wrong with the build in the log file.
+
+### Troubleshooting
+You should be able to determine what went wrong with the build by reviewing the log file.
 
