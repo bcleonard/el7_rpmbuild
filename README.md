@@ -1,4 +1,4 @@
-# el7-rpmbuild
+# el7_rpmbuild
 
 The purpose of this container is to build rpm files based on .spec and sources files for el7.  I found myself having to rebuild some rpms when i migrated from centos6 to centos7. Either they didn't exist or didn't install correctly for some reason.  I didn't want to build just a server to build rpms, so I thought perhaps I could build a container to do the work.  This is the result of that work.
 
