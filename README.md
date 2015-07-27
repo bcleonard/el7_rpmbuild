@@ -1,10 +1,9 @@
-# el7-rpm-build
+# el7-rpmbuild
 
-The purpose of this container is to build rpm files based on .spec and sources files.  I found myself having to rebuild some rpms when i migrated from centos6 to centos7. Either they didn't exist or didn't install correctly for some reason.  I didn't want build just a rpmbuild server, so I thought perhaps I could build a container to do the work.  This is the result of that work.
+The purpose of this container is to build rpm files based on .spec and sources files for el7.  I found myself having to rebuild some rpms when i migrated from centos6 to centos7. Either they didn't exist or didn't install correctly for some reason.  I didn't want to build just a server to build rpms, so I thought perhaps I could build a container to do the work.  This is the result of that work.
 
 ### Note
-The contents of this container and the ability to build rpms are specific the specific needs of the rpm's I build.  Out of the box, I suspect
-that this container will not work for you.  Feel free to contact me with any questions/concerns you have.
+The contents of this container and the ability to build rpms are specific to the rpm's I need.  Out of the box, I suspect that this container will not work for you.  Feel free to contact me with any questions/concerns you have.
 
 ### Preperation
 Before running the container, you'll need to have the following directories predefined on the container host:
