@@ -6,8 +6,15 @@ RUN yum -y update\
   && yum -y install desktop-file-utils gcc glibc-static make redhat-rpm-config rpm-build\
   && yum clean all
 
+# install dovecot prereqs
+RUN yum -y install mariadb-libs postgresql-libs openssl openssl-devel
+
+# install dovecot rpms
+RUN rpm -ivh https://www.mirrorservice.org/sites/dl.atrpms.net/el7-x86_64/atrpms/stable/dovecot-2.2.10-1_14.el7.x86_64.rpm https://www.mirrorservice.org/sites/dl.atrpms.net/el7-x86_64/atrpms/stable/dovecot-devel-2.2.10-1_14.el7.x86_64.rpm
+
 # Enable EPEL repository
-RUN rpm -Uvh http://mirror.steadfast.net/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+#RUN rpm -Uvh http://mirror.steadfast.net/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+RUN yum -y install epel-release
 
 # install dependencies for duplicati
 RUN yum -y install dos2unix gnome-sharp-devel mono-devel webcore-fonts-vista\
