@@ -28,7 +28,7 @@ You'll notice the LOGS directory is not defined as part of a build host.  I use 
 ```
 for the instructions below.  Just make sure you create it prior to starting the container.
 
-### To start the container (without the test database container):
+### To start the container:
 ```sh
 docker run -v /data/rpmbuildroot:/root/rpmbuild bcleonard/el7-rpm-build
 ```
