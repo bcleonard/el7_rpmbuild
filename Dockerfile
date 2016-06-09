@@ -3,9 +3,9 @@ MAINTAINER Bradley Leonard <bradley@stygianresearch.com>
 
 # install basic development tools, epel, dovecot prereqs, duplicati
 RUN yum -y install deltarpm epel-release\
-  && yum -y install desktop-file-utils gcc glibc-static make redhat-rpm-config rpm-build\
+  && yum -y install automake desktop-file-utils gcc glibc-static make redhat-rpm-config rpm-build\
   mariadb-libs postgresql-libs openssl openssl-devel\
-  install dos2unix gnome-sharp-devel mono-devel webcore-fonts-vista\
+  dos2unix gnome-sharp-devel mono-devel\
   && yum clean all
 
 # install dovecot rpms
