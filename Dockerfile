@@ -1,11 +1,12 @@
 FROM centos:7.2.1511
 MAINTAINER Bradley Leonard <bradley@stygianresearch.com> 
 
-# install basic development tools, epel, dovecot prereqs, duplicati
+# install basic development tools, epel, dovecot prereqs, duplicati, fcgi-devel
 RUN yum -y install deltarpm epel-release\
   && yum -y install automake desktop-file-utils gcc glibc-static make redhat-rpm-config rpm-build\
   mariadb-libs postgresql-libs openssl openssl-devel\
   dos2unix gnome-sharp-devel mono-devel\
+  fcgi-devel\
   && yum clean all
 
 # install dovecot rpms
