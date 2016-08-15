@@ -6,7 +6,7 @@ RUN yum -y install deltarpm epel-release\
   && yum -y install automake desktop-file-utils gcc glibc-static make redhat-rpm-config rpm-build\
   mariadb-libs postgresql-libs openssl openssl-devel\
   dos2unix gnome-sharp-devel mono-devel\
-  fcgi-devel\
+  fcgi-devel systemd-devel\
   && yum clean all
 
 # install dovecot rpms
